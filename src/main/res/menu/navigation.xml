@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_select"
+        android:icon="@drawable/ic_select_all_black_24dp"
+        android:title="Activities" />
+    <item
+        android:id="@+id/navigation_body"
+        android:icon="@drawable/ic_accessibility_black_24dp"
+        android:title="Body" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="History" />
+
+</menu>

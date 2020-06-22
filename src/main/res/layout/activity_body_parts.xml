@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/generalLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Energy Information"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bataryImage"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/batary100" />
+
+        <TextView
+            android:id="@+id/bataryEnergyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bodyPartsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bpTv"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Activity"
+            android:gravity="center"
+            android:textSize="22dp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brain"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/brainEnergyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/brainBatary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eyes"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/eyesEnergyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/eyesBatary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/bodyEnergyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/bodyBatary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arms"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/armsEnergyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/armsBatary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legs"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/legsEnergyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/legsBatary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#40000000"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

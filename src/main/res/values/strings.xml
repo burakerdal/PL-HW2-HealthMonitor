@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HealthMonitor</string>
+    <string-array name="types">
+        <item>(none)</item>
+        <item>Physical</item>
+        <item>Non-physical</item>
+        <item>Regular</item>
+    </string-array>
+    <string-array name="Physical">
+        <item>Jogging</item>
+        <item>Cycling</item>
+        <item>Football</item>
+    </string-array>
+    <string-array name="Non_physical">
+        <item>Course</item>
+        <item>Cinema</item>
+        <item>Music</item>
+    </string-array>
+    <string-array name="Regular">
+        <item>Eating</item>
+        <item>Sleeping</item>
+    </string-array>
+    <string-array name="none">
+        <item>(none)</item>
+    </string-array>
+</resources>
